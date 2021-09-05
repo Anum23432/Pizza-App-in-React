@@ -1,0 +1,499 @@
+.bord-rand {border: 100px solid #EAEAEA;
+	border-radius: 50%;
+	position: absolute;
+	width:0px;}
+
+.bord-binnen {border: 90px solid #D7D7D7;
+	border-radius: 50%;
+	position: absolute;
+	top: 10px;
+	left: 10px;}
+	
+.pizzasnede { position: absolute;
+	top:15px;}
+
+.korst{
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 150px solid #773c21;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.kaas{
+	width: 0;
+	height: 0;
+	border-left: 95px solid transparent;
+	border-right: 95px solid transparent;
+	border-bottom: 142px solid #FF872D;
+	border-radius: 50%;
+	position: absolute;
+	left:5px;
+}
+
+.salami{
+	width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    border: 20px solid #9C2E0D;
+}
+
+.salami-half {
+    width: 20px;
+    height: 40px;
+    -moz-border-radius: 75px 0 0 75px;
+	border-radius: 75px 0 0 75px;
+    position: absolute;
+	transform: rotate(-34deg);
+	background-color: #9C2E0D;
+  }
+
+.een {
+	left: 100px;
+    top: 67px;
+}
+
+.twee {
+	left: 98px;
+    top: 10px;
+}
+
+.drie {
+	left: 45px;
+    top: 82px;
+}
+
+#pizza{position:absolute;
+	transition: transform 1s;
+	transform-origin:100px 100px;
+	display: block;
+	width:200px;
+	height:200px;
+	margin:auto;
+	padding:auto;
+	margin-left: 42%;
+    
+	
+}
+
+#pizza:hover{
+	position:absolute;
+	transform: rotate(-10deg);	
+	transform-origin:100px 100px;
+}
+
+@keyframes vallen {
+	from {
+    transform: translateY(-150%) scale(2);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.pizzasnede .een{
+	animation: vallen .8s ease-in;
+}
+
+.pizzasnede .twee{
+	animation: vallen .5s ease-in;
+}
+
+.pizzasnede .drie{
+	animation: vallen 1s ease-in;
+}
+
+#final{
+  margin-left: 38%;
+}
+h1{	
+  font-family: 'Roboto', sans-serif;
+  margin-right: 5%;
+  text-shadow: 3px 3px white;
+  color:black;
+  box-shadow: 0 0 60px 0 whitesmoke;
+  width: 290px;
+  height: 100px;
+  filter: blur(0.5px);
+  border:3px solid wheat;
+  border-radius: 0 20px 0 20px;
+ 
+}
+
+
+div ul li{
+   list-style-type: none;
+   display:inline-block;
+   /* font-family:cursive; */
+   font-size: 20px;
+   margin-left: 5%;
+   padding-inline-end: 5px;
+   font-weight: bold;
+   transition: 1s all;
+   font-family: 'Roboto', sans-serif;
+   
+}
+div ul li:hover{
+  box-shadow: 0 0 30px 0 white;
+  color:black;
+}
+.indigo{
+	width:100%;
+	background-color: black;
+	box-shadow: 0 0 10px 0 whitesmoke;
+    
+}  
+div ul li:active{
+  text-shadow:2px 2px orange;
+}
+body{
+background: url('./components/pz3.jpg') no-repeat center center/cover ;
+
+}
+center div .btn{
+    margin:5px;
+}
+.star{
+	margin-left: 40%;
+	margin-top: 2%;
+}
+select{
+	padding:10px 19px;
+	margin:5px;
+	border-radius: 0 10px 0 10px;
+	background-color: whitesmoke;
+	border:transparent;
+	font-weight: bold;
+	text-overflow: clip;
+	box-shadow: 0 0 50px 0 whitesmoke;
+	transition: 1s all;
+	font-family: 'Roboto', sans-serif;
+}
+select:hover{
+	background-color: wheat;
+	box-shadow: 0 0 30px 0 white;
+	
+}
+select.bigger{
+	padding:10px 37px;
+	
+}
+select.biggest{
+    padding:10px 55px;
+}
+
+#pizza{
+	margin-top: 8%;
+}
+ 
+*{outline: none;}
+
+#app-cover
+{
+    position: fixed;
+    top: 30%;
+    right: 0;
+    left:0;
+    width: 160px;
+    height: 160px;
+    margin: -98px auto 0 auto;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #feeeed;
+    overflow: hidden;
+	cursor: pointer;
+	
+}
+
+#checkbox
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    z-index: 3;
+	cursor: pointer;
+}
+
+#bin-icon
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 42px;
+    height: 58px;
+    margin: -29px auto 0 auto;
+    border-radius: 50%;
+    z-index: 2;
+	cursor: pointer;
+}
+
+#lid
+{
+    position: relative;
+    width: 50px;
+    height: 4px;
+    left: -4px;
+    border-radius: 4px;
+	cursor: pointer;
+}
+
+#lid:before
+{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 0;
+    left: 0;
+    width: 10px;
+    height: 6px;
+    margin: 0 auto;
+    border-radius: 10px 10px 0 0;
+	cursor: pointer;
+}
+
+#box
+{
+    position: relative;
+    height: 52px;
+    margin-top: 2px;
+    border-radius: 0 0 8px 8px;
+	cursor: pointer;
+}
+
+#box-inner
+{
+    position: relative;
+    top: 4px;
+    width: 34px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+	cursor: pointer;
+}
+
+#bin-lines
+{
+    position: relative;
+    top: 7px;
+    margin: 0 auto;
+	cursor: pointer;
+}
+
+#bin-lines, #bin-lines:before, #bin-lines:after
+{
+    width: 3px;
+    height: 30px;
+    border-radius: 4px;
+	cursor: pointer;
+}
+
+#bin-lines:before, #bin-lines:after
+{
+    content: '';
+    position: absolute;
+}
+
+#bin-lines:before
+{
+    left: -10px;
+}
+
+#bin-lines:after
+{
+    left: 10px;
+}
+
+#layer
+{
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 0;
+    height: 0;
+    background-color: #03A9F4;
+    border-radius: 50%;
+    transition: 0.25s ease all;
+    z-index: 1;
+	cursor: pointer;
+}
+
+#lid, #lid:before, #box, #bin-lines, #bin-lines:before, #bin-lines:after
+{
+    background-color: #F44336;
+    transition: 0.2s ease background-color;
+}
+
+#checkbox:checked ~ #bin-icon #lid, #checkbox:checked ~ #bin-icon #lid:before, #checkbox:checked ~ #bin-icon #box, #checkbox:checked ~ #bin-icon #box-inner
+{
+    background-color: #fff;
+}
+
+#checkbox:checked ~ #bin-icon #bin-lines, #checkbox:checked ~ #bin-icon #bin-lines:before, #checkbox:checked ~ #bin-icon #bin-lines:after
+{
+    background-color: #03A9F4;
+}
+
+#checkbox:checked + #bin-icon #box
+{
+    animation: shake 0.2s ease 0.1s;
+}
+
+#checkbox:checked + #bin-icon #lid
+{
+    animation: lift-up 0.8s ease 0.1s, shake_u 0.8s ease 0.1s, shake_l 0.2s ease 0.8s;
+}
+
+#checkbox:checked ~ #layer
+{
+    width: 226px;
+    height: 226px;
+}
+
+@keyframes shake
+{
+    0%{  transform: rotateZ(3deg); }
+    25%{  transform: rotateZ(0);}
+    75%{ transform: rotateZ(-3deg); }
+    100%{ transform: rotateZ(0); }
+}
+
+@keyframes lift-up
+{
+    0%{ top:0; }
+    50%{ top:-35px;}
+    100%{ top:0; }
+}
+
+@keyframes shake_u
+{
+    0%{ transform: rotateZ(0); }
+    25%{ transform:rotateZ(-15deg); }
+    50%{ transform:rotateZ(0deg); }
+    75%{ transform:rotateZ(15deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+@keyframes shake_l
+{
+    0%{ transform:rotateZ(0); }
+    80%{ transform:rotateZ(3deg); }
+    90%{ transform:rotateZ(-3deg); }
+    100%{ transform:rotateZ(0); }
+}
+@media only screen and (max-width: 780px) {
+	#final{
+		margin-left: 22%;
+		margin-top: 10%;
+	  }
+	  h1{
+	    margin-bottom: 5%;
+		margin-right: 9%;
+		/* font-family: cursive; */
+		text-shadow: 3px 3px white;
+		color:black;
+		font-weight:bolder;
+		font-family: 'Roboto', sans-serif;
+        box-shadow: 0 0 60px 0 whitesmoke;
+        width: 200px;
+        height: 90px;
+        filter: blur(0.5px);
+        border:1px solid wheat;
+        border-radius: 0 20px 0 20px;
+		
+	  }
+	  div ul li{
+		 list-style-type: none;
+		 display:inline-block;
+		 /* font-family:cursive; */
+		 font-size: 18px;
+		 margin-left: 10%;
+		 padding-inline-end: 2px;
+		 font-weight: bold;
+		 font-family: 'Roboto', sans-serif;
+	  }
+	  div ul li:hover{
+		box-shadow: 0 0 30px 0 white;
+		
+	  }
+	  .indigo{
+		  width:100%;
+		  background-color: black;
+		  margin-right: 38%;
+	  }  
+	  div ul li:active{
+		text-shadow:2px 2px orange;
+		
+	  }
+	  body{
+	  background: url('./components/pz1.jpg')   center/cover ;
+	  font-family: 'Roboto', sans-serif;
+	  }
+	  .star{
+		  margin-left: 20%;
+		  margin-top: 15%;
+	  }
+	  select{
+		  padding:10px 19px;
+		  margin:5px;
+		  border-radius: 0 10px 0 10px;
+		  background-color: whitesmoke;
+		  border:transparent;
+		  /* font-family: cursive; */
+		  font-weight: bold;
+		  text-overflow: clip;
+		  font-family: 'Roboto', sans-serif;
+	  }
+	  select:hover{
+		  background-color: wheat;
+		  box-shadow: 0 0 15px 0 white;
+	  }
+	  select.bigger{
+		  padding:10px 37px;
+		  
+	  }
+	  select.biggest{
+		  padding:10px 55px;
+	  }
+	  
+	  #pizza{
+		  margin-top: 10%;
+	  }
+      center div .btn{
+        margin:2px;
+        /* padding:8px 10px; */
+    
+    }
+    #pizza{position:absolute;
+        transition: transform 1s;
+        transform-origin:100px 100px;
+        display: block;
+        width:200px;
+        height:200px;
+        margin:auto;
+        padding:auto;
+        margin-left: 26%;
+        margin-top:50%;
+        
+        
+    }
+    
+
+	
+	
+    
+
+}
+
+
+  
