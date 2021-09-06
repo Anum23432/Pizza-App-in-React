@@ -78,6 +78,18 @@
     
 	
 }
+ .card-body{
+        display:inline-block;
+        border:1px solid wheat;
+        width:200px;
+        height: 150px;
+        margin-left: 20%;
+        color:wheat;
+        text-shadow: 2px 2px black;
+        border-radius: 0 20px 0 20px;
+        box-shadow: 0 0 30px 0 whitesmoke;
+        
+    }
 
 #pizza:hover{
 	position:absolute;
@@ -443,6 +455,18 @@ select.biggest{
 		  margin-left: 20%;
 		  margin-top: 15%;
 	  }
+	.card-body{
+        display:inline-block;
+        border:1px solid wheat;
+        width:200px;
+        height: 150px;
+        margin-left: 20%;
+        color:wheat;
+        text-shadow: 2px 2px black;
+        border-radius: 0 20px 0 20px;
+        box-shadow: 0 0 30px 0 whitesmoke;
+        
+    }
 	  select{
 		  padding:10px 19px;
 		  margin:5px;
