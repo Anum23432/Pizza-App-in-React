@@ -3,33 +3,36 @@ import React, {useEffect, useState} from 'react';
 
 function ViewOrder(){
         
-const [pizzaDetails, setPizzaDetails] = useState([])
+const [pizzaData, setPizzaData] = useState([]);
 
 useEffect(() => {
-    fetch('https://order-pizza-api.herokuapp.com/api/ui/?ref=apilist.fun#!/Orders/orders_read_all')
-.then(response => response.json())
-.then(data =>{
-    setPizzaDetails(data.response);
-    console.log(data.response)
-    console.log(pizzaDetails)
+    fetch("https://order-pizza-api.herokuapp.com/api/orders")
+.then((response) => { console.log (response.json)
+  response.json()
+.then((result) =>{
+    console.log("result",result)
+    setPizzaData(result)
 })
-  },[])  
   
-return (
-    <div>
-      {pizzaDetails.map((pizza) =>(
-          <ViewOrder
-          key = {pizza.Order_ID}
-          crust = {pizza.Crust}
-          />
-      ))}
+})
+  },[]) 
+
+return(
+<>
+{pizzaData.map((item) =>(
+      
+      <div className="card-body">
+        <h5 className='card-name'>Crust: {item.Crust} </h5>
+        <h5 className='card-type'>Flavour: {item.Flavour} </h5>
+        <h5 className='card-size'>Size: {item.Size} </h5>
+        <h5 className='card-Order'>Order_ID: {item.Order_ID} </h5>
+      </div>
 
 
-    </div>
-)
-        
+))}
+</>
 
-    
-}
+);} 
+  
 
 export default ViewOrder;
