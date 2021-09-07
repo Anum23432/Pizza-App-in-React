@@ -126,11 +126,12 @@ h1{
   margin-right: 5%;
   text-shadow: 3px 3px white;
   color:black;
-  box-shadow: 0 0 60px 0 whitesmoke;
-  width: 290px;
+  box-shadow: 0 0 15px 0 whitesmoke;
+  width: 300px;
   height: 100px;
-  border:3px solid wheat;
+  border:1px solid wheat;
   border-radius: 0 20px 0 20px;
+  background-color: #00000052;
  
 }
 
@@ -414,11 +415,12 @@ h1{
 	color:black;
 	font-weight:bolder;
 	font-family: 'Roboto', sans-serif;
-        box-shadow: 0 0 60px 0 whitesmoke;
+        box-shadow: 0 0 15px 0 #00000067;
         width: 200px;
         height: 100px;
         border:1px solid wheat;
         border-radius: 0 20px 0 20px;
+        background-color: #00000059;
 		
 }
 div ul li{
