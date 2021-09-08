@@ -45,24 +45,24 @@
     width: 20px;
     height: 40px;
     -moz-border-radius: 75px 0 0 75px;
-	border-radius: 75px 0 0 75px;
+    border-radius: 75px 0 0 75px;
     position: absolute;
-	transform: rotate(-34deg);
-	background-color: #9C2E0D;
+    transform: rotate(-34deg);
+    background-color: #9C2E0D;
   }
 
 .een {
-	left: 100px;
+    left: 100px;
     top: 67px;
 }
 
 .twee {
-	left: 98px;
+    left: 98px;
     top: 10px;
 }
 
 .drie {
-	left: 45px;
+    left: 45px;
     top: 82px;
 }
 
@@ -88,6 +88,7 @@
         text-shadow: 2px 2px black;
         border-radius: 0 20px 0 20px;
         box-shadow: 0 0 30px 0 whitesmoke;
+	background-color: #00000052;
         
     }
 
@@ -206,7 +207,7 @@ select.biggest{
 #app-cover
 {
     position: fixed;
-    top: 30%;
+    top: 40%;
     right: 0;
     left:0;
     width: 160px;
@@ -216,7 +217,7 @@ select.biggest{
     border-radius: 50%;
     box-shadow: 0 0 0 8px #feeeed;
     overflow: hidden;
-	cursor: pointer;
+    cursor: pointer;
 	
 }
 
@@ -446,7 +447,7 @@ div ul li:active{
 		
  }
 body{
-	 background: url('./components/pz1.jpg')   center/cover ;
+	 background: url('./components/pz3.jpg')   center/cover ;
 	 font-family: 'Roboto', sans-serif;
  }
 .star{
@@ -505,7 +506,7 @@ select.biggest{
  }  
 #app-cover{
     position: fixed;
-    top: 41%;
+    top: 47%;
     right: 0;
     left:0;
     width: 160px;
