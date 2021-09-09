@@ -1,5 +1,5 @@
-// import React from 'react';
 import React, {useEffect, useState} from 'react';
+
 
 function ViewOrder(){
         
@@ -21,11 +21,17 @@ return(
 <>
 {pizzaData.map((item) =>(
       
-      <div className="card-body">
-        <h5 className='card-name'>Crust: {item.Crust} </h5>
-        <h5 className='card-type'>Flavour: {item.Flavour} </h5>
-        <h5 className='card-size'>Size: {item.Size} </h5>
-        <h5 className='card-Order'>Order_ID: {item.Order_ID} </h5>
+      <div class="card mb-3 mx-auto" style={{width: '200px', margin: '45px', padding:'15px',height:'200px', backgroundColor:'wheat'}}>
+      <div class="row g-0" >
+      <div class="col-md-8">
+      <div className="card-body" style={{color:'purple'}}>
+        <div className='card-title'>Crust: {item.Crust} </div>
+        <div className='card-subtitle'>Flavor: {item.Flavour} </div>
+        <div className='card-text'>Size: {item.Size} </div><br/>
+        <div className='card-order'>Order_ID: {item.Order_ID}</div>
+      </div>
+      </div>
+      </div>
       </div>
 
 
