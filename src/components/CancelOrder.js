@@ -1,10 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button, Table } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button'
+import Table from 'react-bootstrap/Table'
 import swal from 'sweetalert';
 
+
 const tablestyle = {
-    color: "orange",
+    backgroundColor: '#00000059',
+    width: "60rem",
+    opacity: '0.8',
+    marginLeft: '14%',
+    color:'black',
+    boxShadow: '0 0 20px 0 white'
+
 };
 
 function CancelOrder() {
@@ -39,7 +47,7 @@ function CancelOrder() {
 
     return (
         <>
-            <h3>Cancel Orders List</h3>
+            <h3 style={{marginLeft:'39%'}}>Cancel Orders List</h3>
             <Table striped bordered hover variant="warning" style={tablestyle}>
                 <thead>
                     <tr>
@@ -69,7 +77,7 @@ function CancelOrder() {
                 </tbody>
             </Table>
 
-            <Button variant="outline-warning" size="lg" onClick={() => history.goBack()}> Go Back </Button>
+            <Button style={{marginLeft:'43%'}} variant="danger" size="lg" onClick={() => history.goBack()}> Go Back </Button>
 
         </>
     )
