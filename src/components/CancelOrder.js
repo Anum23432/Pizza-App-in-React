@@ -1,58 +1,78 @@
+import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Button, Table } from 'react-bootstrap';
 import swal from 'sweetalert';
-import React, {useEffect, useState} from 'react';
+
+const tablestyle = {
+    color: "orange",
+};
 
 function CancelOrder() {
-  const [orders,setOrders] = useState([]);
-  useEffect(() => {
-    const requestOptions = {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-    };
+    const history = useHistory();
+    const [orders, setOrders] = useState([]);
+    useEffect(() => {
+        const requestOptions = {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+        };
 
-    fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
-        .then(response => response.json())
-        .then(data => setOrders(data))
+        fetch(`https://order-pizza-api.herokuapp.com/api/orders`, requestOptions)
+            .then(response => response.json())
+            .then(data => setOrders(data))
     },
- []);
+        []);
 
- const onClickCancel = (Order_ID) => {
-    const requestOptions = {
-        method: 'DELETE',
-        headers: { 'Content-Type': 'application/json' },
-    };
+    const onClickCancel = (Order_ID) => {
+        const requestOptions = {
+            method: 'DELETE',
+            headers: { 'Content-Type': 'application/json' },
+        };
 
-    fetch(`https://order-pizza-api.herokuapp.com/api/orders/${Order_ID}`, requestOptions)
-    .then(response => {
-        if (response.status === 200) {
-            swal('Cancelled successfully')
-        }
-        window.location.reload();
-    })
- }
+        fetch(`https://order-pizza-api.herokuapp.com/api/orders/${Order_ID}`, requestOptions)
+            .then(response => {
+                if (response.status === 200) {
+                    swal('Cancelled successfully')
+                }
+                window.location.reload();
+            })
+    }
 
-  return (
-    <>
-    <div>{orders.map((v,i) => {
-      return <div key={i}>
-      <div class="card mb-3 mx-auto" style={{width: '200px', margin: '45px', padding:'15px',height:'200px', backgroundColor:'wheat'}}>
-      <div class="row g-0" >
-      <div class="col-md-8">
-      <div className="card-body">
-        <div className='card-title'>Crust: {v.Crust} </div>
-        <div className='card-subtitle'>Flavor: {v.Flavor} </div>
-        <div className='card-text'>Size: {v.Size} </div>
-        <button className="btn btn-danger" style={{marginLeft:'5%'}} onClick={() => onClickCancel(v.Order_ID)}>CancelOrder</button>
-      </div>
-      </div>
-      </div>
-      </div>
-                <br />
-                <br />
-             </div>})}
-    </div>
-    
-    </>
-  );
+    return (
+        <>
+            <h3>Cancel Orders List</h3>
+            <Table striped bordered hover variant="warning" style={tablestyle}>
+                <thead>
+                    <tr>
+                        <th>Order ID#</th>
+                        <th>Crust</th>
+                        <th>Flavour</th>
+                        <th>Size</th>
+                        <th>Time Stamp</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {orders.map((v, i) => {
+                        return (
+                            <tr key={i}>
+                                <td>{v.Order_ID}</td>
+                                <td>{v.Crust}</td>
+                                <td>{v.Flavor}</td>
+                                <td>{v.Size}</td>
+                                <td>{v.Timestamp}</td>
+                                <td><Button variant="danger" size="md" onClick={() => onClickCancel(v.Order_ID)}>Cancel Order</Button></td>
+                            </tr>
+                        )
+                    }
+                    )
+                    }
+                </tbody>
+            </Table>
+
+            <Button variant="outline-warning" size="lg" onClick={() => history.goBack()}> Go Back </Button>
+
+        </>
+    )
 }
 
 
