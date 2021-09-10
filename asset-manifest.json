@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Pizza-App-in-React/static/css/main.d0e74b0a.chunk.css",
-    "main.js": "/Pizza-App-in-React/static/js/main.5bd00778.chunk.js",
-    "main.js.map": "/Pizza-App-in-React/static/js/main.5bd00778.chunk.js.map",
-    "runtime-main.js": "/Pizza-App-in-React/static/js/runtime-main.1a2539ed.js",
-    "runtime-main.js.map": "/Pizza-App-in-React/static/js/runtime-main.1a2539ed.js.map",
+    "main.css": "/Pizza-App-in-React/static/css/main.f9a8b5ad.chunk.css",
+    "main.js": "/Pizza-App-in-React/static/js/main.4f161f47.chunk.js",
+    "main.js.map": "/Pizza-App-in-React/static/js/main.4f161f47.chunk.js.map",
+    "runtime-main.js": "/Pizza-App-in-React/static/js/runtime-main.8d579fad.js",
+    "runtime-main.js.map": "/Pizza-App-in-React/static/js/runtime-main.8d579fad.js.map",
     "static/css/2.818011ed.chunk.css": "/Pizza-App-in-React/static/css/2.818011ed.chunk.css",
-    "static/js/2.425e25f6.chunk.js": "/Pizza-App-in-React/static/js/2.425e25f6.chunk.js",
-    "static/js/2.425e25f6.chunk.js.map": "/Pizza-App-in-React/static/js/2.425e25f6.chunk.js.map",
-    "static/js/3.609726fd.chunk.js": "/Pizza-App-in-React/static/js/3.609726fd.chunk.js",
-    "static/js/3.609726fd.chunk.js.map": "/Pizza-App-in-React/static/js/3.609726fd.chunk.js.map",
+    "static/js/2.c2687f2e.chunk.js": "/Pizza-App-in-React/static/js/2.c2687f2e.chunk.js",
+    "static/js/2.c2687f2e.chunk.js.map": "/Pizza-App-in-React/static/js/2.c2687f2e.chunk.js.map",
+    "static/js/3.c63dc765.chunk.js": "/Pizza-App-in-React/static/js/3.c63dc765.chunk.js",
+    "static/js/3.c63dc765.chunk.js.map": "/Pizza-App-in-React/static/js/3.c63dc765.chunk.js.map",
     "index.html": "/Pizza-App-in-React/index.html",
     "static/css/2.818011ed.chunk.css.map": "/Pizza-App-in-React/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.d0e74b0a.chunk.css.map": "/Pizza-App-in-React/static/css/main.d0e74b0a.chunk.css.map",
-    "static/js/2.425e25f6.chunk.js.LICENSE.txt": "/Pizza-App-in-React/static/js/2.425e25f6.chunk.js.LICENSE.txt",
+    "static/css/main.f9a8b5ad.chunk.css.map": "/Pizza-App-in-React/static/css/main.f9a8b5ad.chunk.css.map",
+    "static/js/2.c2687f2e.chunk.js.LICENSE.txt": "/Pizza-App-in-React/static/js/2.c2687f2e.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Pizza-App-in-React/static/media/pz5.3f8a5e70.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1a2539ed.js",
+    "static/js/runtime-main.8d579fad.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.425e25f6.chunk.js",
-    "static/css/main.d0e74b0a.chunk.css",
-    "static/js/main.5bd00778.chunk.js"
+    "static/js/2.c2687f2e.chunk.js",
+    "static/css/main.f9a8b5ad.chunk.css",
+    "static/js/main.4f161f47.chunk.js"
   ]
 }
