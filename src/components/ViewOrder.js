@@ -21,7 +21,7 @@ return(
 <>
 {pizzaData.map((item) =>(
       
-      <div class="card mb-3 mx-auto" style={{width: '200px', margin: '45px', padding:'15px',height:'200px', backgroundColor:'wheat'}}>
+      <div class="card mb-3 mx-auto" style=style={{width: '200px', margin: '20px', padding:'12px',height:'200px', backgroundColor:'wheat',boxShadow:'0 0 10px 0 white', opacity:'0.8'}}>
       <div class="row g-0" >
       <div class="col-md-8">
       <div className="card-body" style={{color:'purple'}}>
